@@ -1,5 +1,15 @@
 const assert = require('assert');
 
+function capitalizeFirstLetters(input) {
+    const words = input.split(' ');
+    let output = [];
+    for ( let i = 0; i < words.length; i++){
+        output.push(words[i][0].toUpperCase() + words[i].slice(1));
+    }
+    return output.join(' ');
+}
+console.log(capitalizeFirstLetters);
+
 // capitalizeFirstLetters est une fonction
 assert.strictEqual(typeof capitalizeFirstLetters, 'function');
 // chaîne avec plusieurs mots
