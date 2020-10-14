@@ -1,5 +1,3 @@
-const assert = require('assert');
-
 function capitalizeFirstLetters(input) {
     const words = input.split(' ');
     let output = [];
@@ -12,8 +10,4 @@ function capitalizeFirstLetters(input) {
     return output.join(' ');
 }
 
-assert.strictEqual(typeof capitalizeFirstLetters, 'function');
-assert.strictEqual(capitalizeFirstLetters('for fucking real'), 'For Fucking Real');
-assert.strictEqual(capitalizeFirstLetters('seriously'), 'Seriously');
-assert.strictEqual(capitalizeFirstLetters('z'), 'Z');
-assert.strictEqual(capitalizeFirstLetters(''), '');
+module.exports = capitalizeFirstLetters;
