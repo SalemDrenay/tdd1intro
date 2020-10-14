@@ -4,11 +4,13 @@ function capitalizeFirstLetters(input) {
     const words = input.split(' ');
     let output = [];
     for ( let i = 0; i < words.length; i++){
-        output.push(words[i][0].toUpperCase() + words[i].slice(1));
+        const wordMaj = words[i] && words[i][0].toUpperCase()
+        const nextletter = words[i].slice(1)
+        const all = wordMaj + nextletter
+        output.push(all)
     }
     return output.join(' ');
 }
-console.log(capitalizeFirstLetters);
 
 // capitalizeFirstLetters est une fonction
 assert.strictEqual(typeof capitalizeFirstLetters, 'function');
