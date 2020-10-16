@@ -1,4 +1,3 @@
-// Rectangle.js
 class Rectangle {
   constructor(a, b) {
     this.a = a;
